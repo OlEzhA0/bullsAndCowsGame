@@ -2,6 +2,77 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.bulls {
+  width: 800px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &__cows {
+    width: 600px;
+  }
+}
+
+.input {
+  padding: 40px 0 0 20px;
+  width: 250px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid black;
+    outline: none;
+  }
+
+  &__anim_text {
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    display: flex;
+    width: 400px;
+  }
+}
+
+.go {
+  margin: 0 10px;
+  width: 35px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  &__text {
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.give-up {
+  width: 80px;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  border-radius: 10px;
+  height: 40px;
+  &__text {
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.answer-count {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 3px;
 }
