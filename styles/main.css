@@ -1,0 +1,75 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body,
+p {
+  margin: 0;
+  padding: 0; }
+
+.bulls {
+  width: 800px;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  .bulls__cows {
+    width: 600px; }
+
+.input {
+  padding: 40px 0 0 20px;
+  width: 250px; }
+  .input__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .input__text {
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid black;
+    outline: none; }
+  .input__anim_text {
+    text-transform: uppercase; }
+  .input__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 400px; }
+
+.go {
+  margin: 0 10px;
+  width: 35px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: lightgrey; }
+  .go__text {
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer; }
+
+.give-up {
+  width: 80px;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  border-radius: 10px;
+  height: 40px; }
+  .give-up__text {
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer; }
+
+.answer-count {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 3px; }
+
+/*# sourceMappingURL=main.css.map */
