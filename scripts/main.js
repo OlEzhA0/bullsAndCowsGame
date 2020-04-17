@@ -7,9 +7,12 @@ let genNum = randomNumbers();
 function game() {
   const btn = document.querySelector('.go');
   const inValue = document.querySelector('.input__text');
-  const inputBulls = document.querySelector('.input__bulls');
-  const inputCows = document.querySelector('.input__cows');
-  const innerDigit = document.querySelector('.input__inner-digit');
+  const inputBulls = document.querySelector(
+    '.input__bulls > .input__anim_text'
+  );
+
+  const inputCows = document.querySelector('.input__cows > .input__anim_text');
+  const innerDigit = document.querySelector('.input__anim_text');
   const giveUp = document.querySelector('.give-up');
   let bulls = 0;
   let cows = 0;
@@ -108,7 +111,7 @@ function removeAnswer(value) {
 }
 
 function addElement(value, count) {
-  return value.insertAdjacentHTML('beforeend',
+  return value.insertAdjacentHTML('afterend',
     `<p class="answer-count">
       ${count}
     </p>`);
