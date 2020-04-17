@@ -25,6 +25,11 @@ function game() {
       alert('Please, enter only digit');
     }
 
+    if (valueInput.length < 4) {
+      alert('Please, input 4 digit number');
+      stopPrint = true;
+    }
+
     for (const digit of valueInput) {
       const value = [...valueInput];
 
